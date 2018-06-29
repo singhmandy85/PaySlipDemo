@@ -19,11 +19,7 @@ namespace PaySlipDemo.Controllers
         {
             _paySlipService = paySlipService;
         }
-        public string Get()
-        {
-            return "Welcome To Web API";
-        }
-
+       
         [HttpPost]
         [Route("GeneratePaySlip")]
         public IHttpActionResult GeneratePaySlip(PaySlipBindingModel model)
